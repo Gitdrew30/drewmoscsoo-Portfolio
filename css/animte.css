@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    height: 100vh;
+    ;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(2, 6, 8), rgb(11, 11, 37))
+}
+
+.star {
+    position: absolute;
+    width: 1px;
+    height: 2px;
+    border-radius: 10px;
+    background: linear-gradient(lavender, lavender);
+    box-shadow: 0 0 10px currentColor;
+    animation: anything 0s linear infinite;
+}
+
+@keyframes anything {
+    10% {
+        transform: translate(60px);
+    }
+    30% {
+        transform: translateY(-180px)
+    }
+    60% {
+        transform: translateY(160px);
+    }
+    100% {
+        transform: translateY(100px);
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.night-sky {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    animation: anything 0s linear infinite;
+    position: fixed;
+    animation: rotatesss 10000ms linear infinite;
+    transform-origin: 50%;
+}
+
+@keyframes rotatesss {
+    80% {
+        transform: rotate(250deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}
